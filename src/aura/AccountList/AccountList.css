@@ -1,0 +1,14 @@
+table.THIS
+{
+   width: 100%;
+   border: 1px solid #000;
+   margin-top:10px;
+}
+
+.THIS th, .THIS td
+{
+   width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 1px solid #000;
+}

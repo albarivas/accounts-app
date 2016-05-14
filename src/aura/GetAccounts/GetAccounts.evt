@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" description="Get filtered accounts">
+	<aura:attribute name="employeeNumber" type="Integer"/>
+    <aura:attribute name="accountType" type="String"/>   
+</aura:event>

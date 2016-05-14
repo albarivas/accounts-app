@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:registerEvent name="getAccounts" type="c:GetAccounts"/>
+    
+    <aura:attribute name="employeeNumber" type="Integer"/>
+    <aura:attribute name="accountType" type="String"/>
+    
+    <div class="row"><ui:inputNumber label="Min. employee Number: " value="{!v.employeeNumber}"/></div>
+    <div class="row"><ui:inputText label="Account Type: " value="{!v.accountType}"/></div>
+
+    <ui:button label="Get Accounts" press="{!c.fireGetAccountsEvent}"/>
+</aura:component>

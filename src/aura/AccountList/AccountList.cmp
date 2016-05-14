@@ -1,0 +1,18 @@
+<aura:component controller="AccountListServerController" >   
+    <aura:attribute name="accounts" type="List"/>
+
+    <aura:handler event="c:GetAccounts" action="{!c.handleGetAccountsEvent}"/>
+
+    <table>
+        <tr>
+            <td>NAME</td>
+            <td>EMPLOYEES</td>
+        </tr>
+        <aura:iteration items="{!v.accounts}" var="obj">
+            <tr>
+                <td>{!obj.Name}</td>
+                <td>{!obj.NumberOfEmployees}</td>
+            </tr>
+        </aura:iteration>
+    </table>
+</aura:component>
